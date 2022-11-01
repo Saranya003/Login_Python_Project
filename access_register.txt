@@ -1,5 +1,3 @@
-dakshya@gmail.com,Anjali@123
-anjali@yahoo.in,Dtyagi@123
-rahul@gmail.com,Rahul@234
 Saranya@gmail.com,S@ran8687
 saranya@123gmail.com,S@thish8687
+meera@gmail.com, Meera@123

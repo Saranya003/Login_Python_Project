@@ -134,14 +134,13 @@ def login():
         register()
 
 def welcome():
-    print("WELCOME IN THE DIGITAL WORLD")
-    print("For accessing you need to login and if new user than you need to register")
+    print("Login and New Registration")
     W=input("Login|Register[L/R]: ")
     if W=="L":
         login()
     elif W=="R":
         register()
     else:
-        print("Enter in proper manner only please")
+        print("Enter in proper way")
         welcome()
 welcome()

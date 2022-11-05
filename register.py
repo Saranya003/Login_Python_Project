@@ -146,3 +146,26 @@ def welcome():
 welcome()
 
 
+***************************************Registration***************************************************************
+Login and New Registration
+Login|Register[L/R]: R
+Create your email id in format __@__.__: saranya123@gmail.com
+Username created Succefully
+Create your password with atleast one capital letter one integer and one special character: S@ranya123
+Confirm Password: S@ranya123
+
+***************************************Login***************************************************************
+Enter your username to login: saranya123@gmail.com
+Please Enter your password: S@ranya123
+    
+
+***************************************Password Change***************************************************************    
+Forgot Password [Y/N] : Y
+Create your new password with atleast one capital letter one integer and one special character: S@thish8687
+Confirm Password: S@thish8687
+Forgot Password [Y/N] : N
+try
+***************************************Login succefully***************************************************************
+Enter your username to login: saranya123@gmail.com
+Please Enter your password: S@thish8687
+Welcome in the digital world

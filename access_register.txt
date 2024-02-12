@@ -1,3 +1,59 @@
 Saranya@gmail.com,S@ran8687
 saranya@123gmail.com,S@thish8687
 meera@gmail.com, Meera@123
+
+
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  List<String> images = [
+    "assets/flutter.png",
+    "assets/flutter.png",
+    "assets/flutter.png",
+    "assets/flutter.png",
+    "assets/flutter.png",
+    "assets/flutter.png",
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Flutter GridView Demo"),
+          backgroundColor: Colors.red,
+        ),
+        body: Container(
+          padding: EdgeInsets.all(12.0),
+          child: GridView.builder(
+            itemCount: images.length,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              crossAxisSpacing: 4.0,
+              mainAxisSpacing: 4.0,
+            ),
+            itemBuilder: (BuildContext context, int index) {
+              return Column(
+                children: <Widget>[
+                  // Image with specified height and width
+                  Image.asset(
+                    images[index],
+                    height: 150, // Specify desired height
+                    width: 150, // Specify desired width
+                  ),
+                  // Text below the image
+                  Text(
+                    "Image ${index + 1}",
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ],
+              );
+            },
+          ),
+        ),
+      ),
+    );
+  }
+}
